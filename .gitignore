@@ -1,0 +1,32 @@
+# ---------- 本机会话凭证（绝不可提交） ----------
+# 持久化浏览器 profile：含 Cookie、localStorage 登录态
+profile/
+automation/profile/
+
+# sx 平台 Authorization token
+automation/sx_token*.txt
+
+# Playwright storageState 会话快照：含 jsToken、playerInfo、真实姓名
+auth-exam*.json
+
+# ---------- 调试快照 ----------
+.playwright-cli/
+automation/.playwright-cli/
+*.yml
+
+# ---------- 运行产物 ----------
+__pycache__/
+*.pyc
+/out/
+
+# automation/out 只保留 README 引用的示例截图
+automation/out/*
+!automation/out/01_industry.png
+!automation/out/02_risk.png
+!automation/out/03_analysis.png
+!automation/out/04_submitted.png
+
+# ---------- 编辑器/系统 ----------
+.DS_Store
+.idea/
+.vscode/
